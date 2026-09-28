@@ -1,0 +1,23 @@
+{
+  "name": "practice-6-hardhat-nft-ipfs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat ignition deploy ignition/modules/TokenDeploy.js --network localhost && node scripts/sync-deployment.js",
+    "sync:deployment": "node scripts/sync-deployment.js",
+    "metadata": "node scripts/prepare-ipfs-metadata.js",
+    "dev": "npm --prefix app run dev",
+    "build": "npm --prefix app run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition-ethers": "^0.15.14",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}

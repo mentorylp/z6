@@ -1,0 +1,6 @@
+{
+  "name": "Thor's hammer",
+  "description": "Mjölnir, the legendary hammer of the Norse god of thunder.",
+  "image": "/tor_hammer.png",
+  "strength": 20
+}
